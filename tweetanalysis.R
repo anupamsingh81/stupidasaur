@@ -31,6 +31,8 @@ anupam_df = tbl_df(map_df(anupam, as.data.frame))
 
 anupam_df$statusSource
 
+
+
 save.image(file="stupid.RData")
 
 docstl
@@ -53,3 +55,13 @@ docstl_df$statusSource
 
 massive_df$statusSource
 trump_tweets_df$statusSource
+
+# 24-8-17
+
+searchTwitter('from:anupampom+bayesian')
+SreejithDr
+sreejith_tweets <- userTimeline("SreejithDr", n = 10)
+sreejith_df=tbl_df(map_df(sreejith_tweets, as.data.frame))
+
+
+sreejith_df$statusSource
